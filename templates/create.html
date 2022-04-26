@@ -8,16 +8,14 @@
 <body>
 <div class="container">
     <div class="col-6">
-        <h2>Customer manager</h2>
-        <a href="/create" class="btn btn-success">Create</a>
-        <table class="table table-striped">
-            <tr>
-                <td>STT</td>
-                <td>Name</td>
-                <td></td>
-            </tr>
-            {list-user}
-        </table>
+        <h2>Create customer</h2>
+        <form action="/create" method="post">
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input name="name" type="text" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
